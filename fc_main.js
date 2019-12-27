@@ -1433,6 +1433,10 @@ function isUnavailable(upgrade, upgradeBlacklist) {
     }) != null);
     result = result || (upgrade.season && (!haveAll(Game.season) || (upgrade.season != seasons[FrozenCookies.defaultSeason] && haveAll(upgrade.season))));
 
+    if (upgrade.id == 74 && (Game.season == 'easter' || Game.season ==  'halloween') & !haveAll(Game.season)) {
+    	result = true; // blacklist pledge if easter/halloween not done yet
+    }
+
     if (upgrade.id == 331 || upgrade.id == 332) {
         result = true; // blacklist golden switch from being used, until proper logic can be implemented
     }
