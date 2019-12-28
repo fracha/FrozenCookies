@@ -1433,7 +1433,7 @@ function isUnavailable(upgrade, upgradeBlacklist) {
     }) != null);
     result = result || (upgrade.season && (!haveAll(Game.season) || (upgrade.season != seasons[FrozenCookies.defaultSeason] && haveAll(upgrade.season))));
 
-    if (upgrade.id == 74 && (Game.season == 'easter' || Game.season ==  'halloween') & !haveAll(Game.season)) {
+    if (upgrade.id == 74 && Game.elderWrath == 3 && (Game.season == 'easter' || Game.season ==  'halloween') & !haveAll(Game.season)) {
     	result = true; // blacklist pledge if easter/halloween not done yet
     }
 
