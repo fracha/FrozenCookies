@@ -1,181 +1,3 @@
-FrozenCookies.preferenceValues = {
-    'autoBuy':{
-        'hint':'Automatically buy the most efficient building when you\'ve met its cost',
-        'display':["Autobuy OFF","Autobuy ON"],
-        'default':0
-    },
-    'autoAscend':{
-        'hint':'Automatically ascend when your heavenly chip count hits a certain number. (note: this will skip the upgrade screen)',
-        'display':["Autoascend OFF", "Autoascend ON"],
-        'default':0,
-        'extras':'<a class="option" id="chipsToAscend" onclick="updateAscendAmount(\'HCAscendAmount\');">${HCAscendAmount} heavenly chips</a>'
-    },
-    'autoBulk':{
-        'hint':'Automatically set buildings to be bought in bulk after reincarnation',
-        'display':['Auto Bulkbuy OFF', 'Auto Bulkbuy x10', 'Auto Bulkbuy x100'],
-        'default':0
-    },
-    'autoGC':{
-        'hint':'Automatically click Golden Cookies when they appear',
-        'display':["Autoclick GC OFF", "Autoclick GC ON"],
-        'default':0
-    },
-    'autoWrinkler':{
-        'hint':'Automatically pop wrinklers efficiently or instantly',
-        'display':['Autopop Wrinklers OFF', 'Autopop Wrinklers Efficiently', 'Autopop Wrinklers Instantly'],
-        'default':0
-    },
-/*Not working yet
-    'shinyPop':{
-        'hint':'Protect the endangered Shiny Wrinkler from being auomatically popped',
-        'display':['Save Shiny Wrinklers ON', 'Save Shiny Wrinklers OFF'],
-        'default':0
-    },*/
-    'autoSL':{
-        'hint':'Automatically harvest sugar lumps when ripe, with option to automatically swap in Rigidel',
-        'display':["Autoharvest SL OFF", "Autoharvest SL ON", "Autoharvest SL ON + Auto Rigidel"],
-        'default':0
-    },
-    'autoReindeer':{
-        'hint':'Automatically click reindeer',
-        'display':['Autoclick Reindeer OFF', 'Autoclick Reindeer ON'],
-        'default':0
-    },
-    'autoClick':{
-        'hint':'Click the large cookie',
-        'display':['Autoclick OFF', 'Autoclick ON'],
-        'default':0,
-        'extras':'<a class="option" id="cookieClickSpeed" onclick="updateSpeed(\'cookieClickSpeed\');">${cookieClickSpeed} clicks/sec</a>'
-    },
-    'autoFrenzy':{
-        'hint':'Click the large cookie during Clicking Frenzies',
-        'display':['Autofrenzy OFF', 'Autofrenzy ON'],
-        'default':0,
-        'extras':'<a class="option" id="frenzyClickSpeed" onclick="updateSpeed(\'frenzyClickSpeed\');">${frenzyClickSpeed} clicks/sec</a>'
-    },
-    'autoBlacklistOff':{
-        'hint':'Automatically turns off a blacklist once the goal for that blacklist is achieved',
-        'display':['Auto Blacklist OFF', 'Auto Blacklist ON'],
-        'default':0
-    },
-    'blacklist':{
-        'hint':'Blacklist purchases from the efficiency calculations',
-        'display':['No Blacklist', 'Speedrun Blacklist', 'Hardcore Blacklist', 'Grandmapocalypse Mode', 'No Buildings'],
-        'default':0
-    },
-/*  'timeTravelMethod':{
-        'hint':'Time travel is unstable. This determines how time travel works. If you\'re unsure, don\'t touch this.',
-        'display':['Time Travel DISABLED'],//,'Purchases by Estimated Effective CPS','Purchases by Simulated Real Time','Heavenly Chips by Estimated Effective CPS','Heavenly Chips by Simulated Real Time'],
-        'default':0,
-        'extras':'<a class="option" id="timeTravelPurchases" onclick="updateTimeTravelAmount();">Set Time Travel Amount</a>'
-    },*/
-    'pastemode':{
-        'hint':'Always autobuy the least efficient purchase. This is a stupid idea, you should never turn this on.',
-        'display':['Pastemode OFF','Pastemode ON'],
-        'default':0
-    },
-    'simulatedGCPercent':{
-        'hint':'What percentage of Golden Cookies should be assumed as "clicked" for GC efficiency calculations (100% recommended)',
-        'display':["0%","100%"],
-        'default':1
-    },
-    'fpsModifier':{
-        'hint':'The frame rate at which the game runs. 60 is twice as fast, 15 is half as fast, etc. If you\'re not sure, keep this at 30',
-        'display':['24', '30', '48', '60', '72', '88', '100', '120', '144', '200', '240', '300','5', '10', '15'],
-        'default':2
-    },
-    'logging':{
-        'hint':'Display detailed logs in the javascript console',
-        'display':['Logging OFF', 'Logging ON'],
-        'default':1
-    },
-    'trackStats':{
-        'hint':'Track your CPS/HC earned over time during a single session to enable graphing. This may end up being *extremely* memory-intensive',
-        'display':['Tracking OFF', 'Every 60s', 'Every 30m', 'Every 1h', 'Every 24h', 'On upgrades', 'Smart Timing'],
-        'default':0,
-        'extras':'<a class="option" id="viewStats" onclick="viewStatGraphs();">View Stat Graphs</a>'
-    },
-    
-    /*Doesnt work
-    'showAchievements':{
-        'hint':'Show achievement popups (Kind of broken early game)',
-        'display':['Achievement Popups OFF','Achievement Popups ON'],
-        'default':0
-    },
-    */
-    
-    'numberDisplay':{
-        'hint':'Change how numbers are shortened',
-        'display':["Raw Numbers","Full Word (million, billion)","Initials (M, B)","SI Units (M, G, T)", "Scientific Notation (6.3e12)"],
-        'default':1
-    },
-    'autoGS':{
-        'hint':'Automatically turn on the Golden Switch during Dragonflight and Click Frenzy',
-        'display':['Auto-Switch OFF','Auto-Switch ON'],
-        'default':0
-    },
-    'autoGodzamok':{
-        'hint':'Automatically sell all cursors and farms (except one) during Dragonflight and Click Frenzy if you worship Godzamok ("Sane" prevents rapid buy/sell spam)',
-        'display':['Auto-Godzamok OFF','Auto-Godzamok ON','Auto-Godzamok ON (Sane)','Auto-Godzamok (REALLY INSANE)'],
-        'default':0
-    },
-    'cursorLimit':{
-        'hint':'Limit max number of cursors to keep Godzamok useful',
-        'display':['Cursor Limit OFF','Cursor Limit ON'],
-        'default':0,
-        'extras':'<a class="option" id="cursorMax" onclick="updateCursorMax(\'cursorMax\');">${cursorMax} cursors</a>'
-    },
-    'farmLimit':{
-        'hint':'Limit max number of farms to keep Godzamok useful',
-        'display':['Farm Limit OFF','Farm Limit ON'],
-        'default':0,
-        'extras':'<a class="option" id="farmMax" onclick="updateFarmMax(\'farmMax\');">${farmMax} farms</a>'
-    },
-    'autoSpell':{
-        'hint':'Automatically cast selected spell when your mana is full',
-        'display':["Auto Cast OFF","Cojure Baked Goods","Force the Hand of Fate","Spontaneous Edifice","Haggler's Charm (cheapest)"],
-        'default':0,
-        'extras':'<a class="option" id="minCpSMult" onclick="updateCpSMultMin(\'minCpSMult\');">x${minCpSMult} minimum Frenzy</a>'
-    },
-    'autoFortune':{
-        'hint':'Automatically click the news ticker when Fortune News appears',
-        'display':["Auto Fortune OFF","Auto Fortune ON"],
-        'default':0
-    },
-    'holdSEBank':{
-        'hint':'Maintain a bank for Spontaneous Edifice (already enabled if Auto Casting SE)',
-        'display':["SE Bank OFF","SE Bank ON"],
-        'default':0
-    },
-    'towerLimit':{
-        'hint':'Stop Autobuying Wizard Towers at selected Max Mana, for spellcasting efficiency',
-        'display':['Wizard Tower Cap OFF','Wizard Tower Cap ON'],
-        'default':0,
-        'extras':'<a class="option" id="manaMax" onclick="updateManaMax(\'manaMax\');">${manaMax} max Mana</a>'
-    },
-    'setHarvestBankPlant':{
-        'hint':'Choose the plant you are going to harvest/let explode.',
-        'display':['No harvesting Bank','Bakeberry Bank','Chocoroot Bank','White Chocoroot Bank','Queenbeet Bank','Duketater Bank','Crumbspore Bank','Doughshroom Bank'],
-        'default':0
-    },
-    'setHarvestBankType':{
-        'hint':'Choose a scenario that you want for harvesting to calculate the needed Bank (no effect if no plant was selected above).',
-        'display':['No CpS multiplier','Frenzy','Building special','Frenzy + Building special'],
-        'default':0,
-        'extras':'<a class="option" id="maxSpecials" onclick="updateMaxSpecials(\'maxSpecials\');">${maxSpecials} Building specials</a>'
-    },
-    'defaultSeason':{
-        'hint':'Season to maintain when no others have needed upgrades',
-        'display':['Default Season: None','Default Season: Business Day','Default Season: Christmas','Default Season: Easter','Default Season: Halloween',"Default Season: Valentine's Day"],
-        'default':0
-    },
-    'fancyui':{
-        'hint':'As these graphics are very slow, enable it here.',
-        'display':['No graphic','Textbox only','Wheel only','Full graphics'],
-        'default':0
-    } 
-};
-
 // Unused, for now:
 function buildUpgradeList() {
     return _.compact(_.flatten(Game.ObjectsById.map(function(b){return b.buyFunction.toString().match(/if\s?\(this\.amount>=(\d+)\)\s?Game\.Unlock\((.+?)\);/g).map(function(matched){
@@ -262,7 +84,7 @@ var upgradeJson = {
     509: {'buildings': [0,0,0,0,400], 'upgrades': []},
     665: {'buildings': [0,0,0,0,450], 'upgrades': []},
     703: {'buildings': [0,0,0,0,500], 'upgrades': []},
-
+    
     // Bank tiered upgrades
     232: {'buildings': [0,0,0,0,0,1], 'upgrades': []},
     233: {'buildings': [0,0,0,0,0,5], 'upgrades': []},
@@ -292,7 +114,7 @@ var upgradeJson = {
     511: {'buildings': [0,0,0,0,0,0,400], 'upgrades': []},
     667: {'buildings': [0,0,0,0,0,0,450], 'upgrades': []},
     705: {'buildings': [0,0,0,0,0,0,500], 'upgrades': []},
-
+    
     // Wizard Tower tiered upgrades
     244: {'buildings': [0,0,0,0,0,0,0,1], 'upgrades': []},
     245: {'buildings': [0,0,0,0,0,0,0,5], 'upgrades': []},
@@ -427,7 +249,7 @@ var upgradeJson = {
     532: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,400], 'upgrades': []},
     676: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,450], 'upgrades': []},
     714: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,500], 'upgrades': []},
-
+    
     // Javascript Console tiered upgrades
     594: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1], 'upgrades': []},
     595: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5], 'upgrades': []},
@@ -440,7 +262,7 @@ var upgradeJson = {
     602: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,300], 'upgrades': []},
     603: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,350], 'upgrades': []},
     604: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,400], 'upgrades': []},
-    676: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,450], 'upgrades': []},
+    677: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,450], 'upgrades': []},
     714: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,500], 'upgrades': []},
 
     // Idleverse tierd upgrades
@@ -457,8 +279,7 @@ var upgradeJson = {
     694: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,400], 'upgrades': []},
     695: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,450], 'upgrades': []},
     716: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,500], 'upgrades': []},
-
-
+    
     // Grandma upgrades
     57: {'buildings': [0,1,15], 'upgrades': []},
     58: {'buildings': [0,1,0,15], 'upgrades': []},
@@ -476,7 +297,6 @@ var upgradeJson = {
     521: {'buildings': [0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,15], 'upgrades': []},
     593: {'buildings': [0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15], 'upgrades': []},
     584: {'buildings': [0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15], 'upgrades': []},
-
     
     // Synergies
     369: {'buildings': [0,0,15,0,0,0,0,0,0,0,0,15,0,0,0], 'upgrades': [393]},
@@ -565,45 +385,45 @@ var upgradeJson = {
     166: {'buildings': [], 'upgrades': [152], 'santa': 1},
     168: {'buildings': [], 'upgrades': [152], 'santa': 14},
 
-    // Season switching
-    182: {'buildings': [], 'upgrades': [181]},
-    183: {'buildings': [], 'upgrades': [181]},
-    184: {'buildings': [], 'upgrades': [181]},
-    185: {'buildings': [], 'upgrades': [181]},
-    209: {'buildings': [], 'upgrades': [181]},
+    // Season switching - requires Season Switcher heavenly upgrade (181)
+    182: {'buildings': [], 'upgrades': [181]},      // Christmas
+    183: {'buildings': [], 'upgrades': [181]},      // Halloween
+    184: {'buildings': [], 'upgrades': [181]},      // Valentine's
+    185: {'buildings': [], 'upgrades': [181]},      // Business Day
+    209: {'buildings': [], 'upgrades': [181]},      // Easter
     
-    // Easter season
-    210: {'buildings': [], 'upgrades': [69,209]},
-    211: {'buildings': [], 'upgrades': [69,209]},
-    212: {'buildings': [], 'upgrades': [69,209]},
-    213: {'buildings': [], 'upgrades': [69,209]},
-    214: {'buildings': [], 'upgrades': [69,209]},
-    215: {'buildings': [], 'upgrades': [69,209]},
-    216: {'buildings': [], 'upgrades': [69,209]},
-    217: {'buildings': [], 'upgrades': [69,209]},
-    218: {'buildings': [], 'upgrades': [69,209]},
-    219: {'buildings': [], 'upgrades': [69,209]},
-    220: {'buildings': [], 'upgrades': [69,209]},
-    221: {'buildings': [], 'upgrades': [69,209]},
-    222: {'buildings': [], 'upgrades': [69,209]},
-    223: {'buildings': [], 'upgrades': [69,209]},
-    224: {'buildings': [], 'upgrades': [69,209]},
-    225: {'buildings': [], 'upgrades': [69,209]},
-    226: {'buildings': [], 'upgrades': [69,209]},
-    227: {'buildings': [], 'upgrades': [69,209]},
-    228: {'buildings': [], 'upgrades': [69,209]},
-    229: {'buildings': [], 'upgrades': [69,209]},
+    // Easter season - Requires Bunny biscuit (209)
+    210: {'buildings': [], 'upgrades': [209]},
+    211: {'buildings': [], 'upgrades': [209]},
+    212: {'buildings': [], 'upgrades': [209]},
+    213: {'buildings': [], 'upgrades': [209]},
+    214: {'buildings': [], 'upgrades': [209]},
+    215: {'buildings': [], 'upgrades': [209]},
+    216: {'buildings': [], 'upgrades': [209]},
+    217: {'buildings': [], 'upgrades': [209]},
+    218: {'buildings': [], 'upgrades': [209]},
+    219: {'buildings': [], 'upgrades': [209]},
+    220: {'buildings': [], 'upgrades': [209]},
+    221: {'buildings': [], 'upgrades': [209]},
+    222: {'buildings': [], 'upgrades': [209]},
+    223: {'buildings': [], 'upgrades': [209]},
+    224: {'buildings': [], 'upgrades': [209]},
+    225: {'buildings': [], 'upgrades': [209]},
+    226: {'buildings': [], 'upgrades': [209]},
+    227: {'buildings': [], 'upgrades': [209]},
+    228: {'buildings': [], 'upgrades': [209]},
+    229: {'buildings': [], 'upgrades': [209]},
 
-    // Halloween season
-    134: {'buildings': [], 'upgrades': [69,183]},
-    135: {'buildings': [], 'upgrades': [69,183]},
-    136: {'buildings': [], 'upgrades': [69,183]},
-    137: {'buildings': [], 'upgrades': [69,183]},
-    138: {'buildings': [], 'upgrades': [69,183]},
-    139: {'buildings': [], 'upgrades': [69,183]},
-    140: {'buildings': [], 'upgrades': [69,183]},
+    // Halloween season - Requires Ghostly biscuit (183); actually getting rewards requires "One mind" and wrinklers
+    134: {'buildings': [], 'upgrades': [69,183], 'wrinklers': 1},
+    135: {'buildings': [], 'upgrades': [69,183], 'wrinklers': 1},
+    136: {'buildings': [], 'upgrades': [69,183], 'wrinklers': 1},
+    137: {'buildings': [], 'upgrades': [69,183], 'wrinklers': 1},
+    138: {'buildings': [], 'upgrades': [69,183], 'wrinklers': 1},
+    139: {'buildings': [], 'upgrades': [69,183], 'wrinklers': 1},
+    140: {'buildings': [], 'upgrades': [69,183], 'wrinklers': 1},
 
-    // Christmas season
+    // Christmas season - Requires Festive biscuit (182)
     143: {'buildings': [], 'upgrades': [182]},
     144: {'buildings': [], 'upgrades': [182]},
     145: {'buildings': [], 'upgrades': [182]},
@@ -612,7 +432,7 @@ var upgradeJson = {
     148: {'buildings': [], 'upgrades': [182]},
     149: {'buildings': [], 'upgrades': [182]},
 
-    // Valentine's Day season
+    // Valentine's Day season - Requires Lovesick biscuit (184); each Valentine's biscuit requires the previous one
     169: {'buildings': [], 'upgrades': [184]},
     170: {'buildings': [], 'upgrades': [169,184]},
     171: {'buildings': [], 'upgrades': [170,184]},

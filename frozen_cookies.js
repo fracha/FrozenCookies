@@ -8,7 +8,7 @@ var baseUrl = scriptElement !== null ?
 var FrozenCookies = {
     'baseUrl': baseUrl,
     'branch': '',
-    'version': '1.7.0'
+    'version': '1.9.0'
 };
 
 // Load external libraries
@@ -26,6 +26,7 @@ var script_list = [
     '//cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.highlighter.min.js',
     '//cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.logAxisRenderer.min.js',
     '//cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.cursor.min.js',
+    FrozenCookies.baseUrl + '/fc_preferences.js',
     FrozenCookies.baseUrl + '/cc_upgrade_prerequisites.js',
     FrozenCookies.baseUrl + '/fc_main.js',
     FrozenCookies.baseUrl + '/fc_button.js',
