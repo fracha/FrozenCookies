@@ -3,6 +3,11 @@ FrozenCookies
 
 An automated Cookie Clicker tool.
 
+Discord
+-------
+For devolopers / code intended behavior purposes only.
+https://discord.gg/Cpw8csuypT
+
 How to use
 ----------
 
@@ -37,6 +42,16 @@ What can Frozen Cookies do?
 
 What's new?
 -----------
+
+2020 Nov 2
+ - Version 1.10.0
+ - Add version check
+ - Removed unused variables
+ - Removed unused function
+ - Update CookieClicker 2.031
+  - New Building upgrades
+  - New Grandma upgrades
+  - New Synergie upgrades
 
 2020 Oct 26
  - Version 1.9.0

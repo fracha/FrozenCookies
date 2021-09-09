@@ -1,4 +1,11 @@
 // Global Variables
+var lastCompatibleVersion = 2.031;
+if (Game.version > lastCompatibleVersion) {
+    console.log("WARNING: The Cookie Clicker version is newer than this version of Frozen Cookies.");
+    console.log("This version of Frozen Cookies has only been tested through Cookie Clicker version " + lastCompatibleVersion);
+    console.log("There may be incompatibilities, undesirable effects, bugs, shifts in reality, immoral behavior, and who knows what else.");
+}
+
 var scriptElement = document.getElementById('frozenCookieScript') !== null ?
     document.getElementById('frozenCookieScript') :
     document.getElementById('modscript_frozen_cookies');
@@ -8,7 +15,7 @@ var baseUrl = scriptElement !== null ?
 var FrozenCookies = {
     'baseUrl': baseUrl,
     'branch': '',
-    'version': '1.9.0'
+    'version': '1.10.0'
 };
 
 // Load external libraries
@@ -30,10 +37,11 @@ var script_list = [
     FrozenCookies.baseUrl + '/cc_upgrade_prerequisites.js',
     FrozenCookies.baseUrl + '/fc_main.js',
     FrozenCookies.baseUrl + '/fc_button.js',
-    FrozenCookies.baseUrl + '/fc_spellpredict.js'
+    FrozenCookies.baseUrl + '/fc_spellpredict.js',
+    FrozenCookies.baseUrl + '/fc_infobox.js'
 ]
 
-FrozenCookies.loadInterval = setInterval(function() {
+FrozenCookies.loadInterval = setInterval(function () {
     if (Game && Game.ready) {
         clearInterval(FrozenCookies.loadInterval);
         FrozenCookies.loadInterval = 0;
@@ -43,12 +51,11 @@ FrozenCookies.loadInterval = setInterval(function() {
 
 function loadScript(id) {
     if (id >= script_list.length) {
-        setOverrides();
-        FCStart();
+        registerMod();  // when the mod is registered, the save data is passed in the load function
     } else {
         var url = script_list[id];
         if (/\.js$/.exec(url)) {
-            $.getScript(url, function() {
+            $.getScript(url, function () {
                 loadScript(id + 1);
             });
         } else if (/\.css$/.exec(url)) {
@@ -69,7 +76,7 @@ function fcInit() {
     var jquery = document.createElement('script');
     jquery.setAttribute('type', 'text/javascript');
     jquery.setAttribute('src', '//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
-    jquery.onload = function() {
+    jquery.onload = function () {
         loadScript(0);
     };
     document.head.appendChild(jquery);
