@@ -359,6 +359,8 @@ var upgradeJson = {
     606: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,0,75], 'upgrades': [394]},   // Tombola computing
     696: {'buildings': [0,0,0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,15], 'upgrades': [393]}, // Perforated mille-feuille cosmos
     697: {'buildings': [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,0,75], 'upgrades': [394]}, // Infraverses and superverses
+    761: {'buildings': [0,0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0,15], 'upgrades': [393]}, // Thoughts & prayers
+    697: {'buildings': [0,0,75,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75], 'upgrades': [394]}, // Fertile minds
 
     // Fortune upgrades - Requires "Fortune cookies" heavenly upgrade (643)
     621: {'buildings': [15], 'upgrades': [643]},                                      // Fortune #001
