@@ -1484,7 +1484,7 @@ function upgradeStats(recalculate) {
                     var baseCpsOrig = baseCps();
                     var cpsOrig = effectiveCps(Math.min(Game.cookies, currentBank));
                     var existingAchievements = Object.keys(Game.AchievementsById).map(function (item) {
-                        return Game.AchivementsById[item].won
+                        return Game.AchievementsById[item].won
                     });
                     var existingWrath = Game.elderWrath;
                     var discounts = totalDiscount() + totalDiscount(true);
