@@ -1440,8 +1440,8 @@ function buildingStats(recalculate) {
                 var currentBank = bestBank(0).cost;
                 var baseCpsOrig = baseCps();
                 var cpsOrig = effectiveCps(Math.min(Game.cookies, currentBank)); // baseCpsOrig + gcPs(cookieValue(Math.min(Game.cookies, currentBank))) + baseClickingCps(FrozenCookies.autoClick * FrozenCookies.cookieClickSpeed);
-                var existingAchievements = Game.AchievementsById.map(function (item, i) {
-                    return item.won
+                var existingAchievements = Object.keys(Game.AchievementsById).map(function (item) {
+                    return Game.AchievementsById[item].won
                 });
                 buildingToggle(current);
                 var baseCpsNew = baseCps();
@@ -1483,8 +1483,8 @@ function upgradeStats(recalculate) {
                     var cost = upgradePrereqCost(current);
                     var baseCpsOrig = baseCps();
                     var cpsOrig = effectiveCps(Math.min(Game.cookies, currentBank));
-                    var existingAchievements = Game.AchievementsById.map(function (item) {
-                        return item.won
+                    var existingAchievements = Object.keys(Game.AchievementsById).map(function (item) {
+                        return Game.AchivementsById[item].won
                     });
                     var existingWrath = Game.elderWrath;
                     var discounts = totalDiscount() + totalDiscount(true);
