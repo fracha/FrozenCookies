@@ -350,8 +350,8 @@ function beautifyUpgradesAndAchievements() {
     });
 
     // These might not have any numbers in them, but just in case...
-    Game.UpgradesById.forEach(function(upg) {
-        upg.desc = upg.desc.replace(numre, beautifyFn);
+    Object.keys(Game.UpgradesById).forEach(function(upg) {
+        Game.UpgradesById[upg].desc = Game.UpgradesById[upg].desc.replace(numre, beautifyFn);
     });
 }
 
