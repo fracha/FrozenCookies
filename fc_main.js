@@ -345,8 +345,8 @@ function beautifyUpgradesAndAchievements() {
     }
 
     var numre = /\d\d?\d?(?:,\d\d\d)*/;
-    Game.AchievementsById.forEach(function(ach) {
-        ach.desc = ach.desc.replace(numre, beautifyFn);
+    Object.keys(Game.AchievementsById).forEach(function(ach) {
+        Game.AchievementsById[ach].desc = Game.AchievementsById[ach].desc.replace(numre, beautifyFn);
     });
 
     // These might not have any numbers in them, but just in case...
