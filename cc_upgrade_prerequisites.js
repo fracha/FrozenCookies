@@ -395,6 +395,7 @@ var upgradeJson = {
     497: {'buildings': [500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500], 'upgrades': []},  // Pure pitch-black chocolate butter biscuit
     659: {'buildings': [550,550,550,550,550,550,550,550,550,550,550,550,550,550,550,550,550,550,550], 'upgrades': []},  // Cosmic chocolate butter biscuit
     699: {'buildings': [600,600,600,600,600,600,600,600,600,600,600,600,600,600,600,600,600,600,600], 'upgrades': []},  // Butter biscuit (with butter)
+    767: {'buildings': [650,650,650,650,650,650,650,650,650,650,650,650,650,650,650,650,650,650,650], 'upgrades': []},  // Everybutter biscuit
 
     // Grandmapocalypse research
     64: {'buildings': [0,6], 'upgrades': [57,58,59,250,251,252,60]}, //,61,62,63,103,180,415]}, // Bingo center/Research facility
