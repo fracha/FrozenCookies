@@ -530,7 +530,8 @@ var recommendationBlacklist = [
     361,        // blacklist golden cookie sound selector from being included in the recommendationList
     414,        // blacklist backgMath.round selector from being included in the recommendationList
     452,        // blacklist sugar frenzy from being included in the recommendationList
-    563, 564    // blacklist shimmering veil from being included in the recommendationList
+    563, 564,   // blacklist shimmering veil from being included in the recommendationList
+    806         // blacklist jukebox from being included in the recommendationList
 ]
 
 var seasons = ['','fools','christmas','easter','halloween','valentines'];
